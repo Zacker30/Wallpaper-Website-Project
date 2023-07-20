@@ -1,0 +1,112 @@
+/*Drop Shadow*/
+.card:hover{
+	-webkit-box-shadow: -1px 9px 25px -12px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 9px 25px -12px rgba(0.0.0.0.75);
+	box-shadow: -1px 9px 25px -12px rgba(0.0.0.0.75);
+      -webkit-transition: all 0.5s ;
+      -moz-transition: all 0.5s ;
+      -o-transition: all 0.5s ;
+      -ms-transition: all 0.5s ;
+      transition: all 0.5s ;
+}
+
+/*Zoomin Effect on hover*/
+.hover-zoomin a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-zoomin img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 0.5s ;
+      -moz-transition: all 0.5s ;
+      -o-transition: all 0.5s ;
+      -ms-transition: all 0.5s ;
+      transition: all 0.5s ;
+    }
+    .hover-zoomin:hover img {
+      -webkit-transform: scale(1.15);
+      -moz-transform: scale(1.15);
+      -o-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+      transform: scale(1.15);
+    }
+  /*NavBar Gradient*/
+  .darkcol{
+    background-image: linear-gradient(to right,#414141,#000000);
+  }
+
+/*Like and add button on hover starts*/
+.card{
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+}
+
+.image-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  opacity: 0;
+  padding: 15px;
+  transition: opacity 0.25s;
+}
+
+.image-overlay--blur{
+  backdrop-filter:  blur(5px);
+}
+
+.image-overlay:hover{
+  opacity: 1;
+}
+
+.image-overlay > * {
+  transform: translateY(-20px);
+  transition: transform 0.25s;
+}
+
+.image-overlay:hover > * {
+  transform: translateY(0);
+}
+/*Like and add button on hover ends*/
+
+
+#bg{
+      height: 1350px;
+      background-image: radial-gradient(ellipse at top,#04619f,#000000);
+    }
+
+#overflow{
+  overflow-x: hidden;
+}
+
+.hovtxt{
+  background: #000000;
+  opacity: 0;
+}
+
+.hovtxt:hover{
+  opacity: 1;
+}
+
+.image-overlay {
+  user-select: none;
+}
+
+.card-text {
+  width: fit-content;
+  width: -moz-fit-content;
+  margin-left: auto;
+}
+
+.link-overlay {
+  display: block;
+  position: absolute;
+  inset: 0;
+  transform: none;
+}

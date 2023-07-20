@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Experiment</title>
+	<script type="text/javascript" src="js/jq.js"></script>
+	<script type="text/javascript" src="JS/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- Style.css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- MDB Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+	<style type="text/css">
+		#grid1{
+			height: 1500px;
+			background-image: radial-gradient(ellipse at top,#04619f,#000000);
+		}
+		.dotted {
+    		border: 1px dotted #ffffff; border-style: none none dotted; color: #fff; background-color: #fff; max-width: 80%;
+    	}
+    	.hover-vign:vignette{
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+		  opacity: 1;
+		}
+		  .hover-vign:hover:vignette{
+		    transition-duration: 1.5s;
+		    opacity: 1;
+    </style>
+</head>
+<body id="overflow">
+<div id="grid1">
+	<!-- navbar start -->
+	<nav class="navbar navbar-expand-lg navbar-dark darkcol" >
+	  <a class="navbar-brand text-warning" href="home.html">Experiment</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="home.html" >Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="about-us.html">About Us <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="contact-us.html">Contact Us <span class="sr-only">(current)</span></a>
+	      </li>
+	    </ul>
+	  </div>
+	  <div class="d-flex">
+	  	<a href="login.html"><button type="button" class="btn btn-outline-primary mr-2">Login</button></a>
+	  	<a href="register.html"><button type="button" class="btn btn-primary">Register</button></a>
+	  </div>
+	</nav>
+	<!-- navbar end -->
+
+	<!-- Image Starts -->
+	<div class="container-fluid mt-5 pt-2">
+		<div class="row">
+			<div class="col-md-8">
+				<img src="img/1.png" class="img-fluid ml-4" data-aos="fade-right" alt="..." style="max-width: 100%;">
+			</div>
+			<div class="col-md-4 my-auto" align="center">
+				<h1 class="text-white mb-3"  data-aos="fade-down"> Wallpaper Info:</h1>
+				<hr class="dotted" data-aos="fade-left">
+				<p class="text-white"  data-aos="fade-up"> Dimensions: 1920x1080</p>
+				<p class="text-white"  data-aos="fade-up"> File Size: 1.13MB</p>
+				<button type="button" class="btn btn-outline-warning mr-2" data-aos="fade-up">Add to Cart</button>
+				<button type="button" class="btn btn-outline-warning" data-aos="fade-up"><i class="bi-suit-heart-fill"></i></button>
+				<button type="button" class="btn btn-outline-warning" data-aos="fade-up"><i class="bi-plus-lg"></i></button>
+			</div>
+		</div>
+	</div>
+	<!-- Image Ends -->
+
+	<div class="container"  data-aos="fade-up">
+	<h1 class="text-warning mt-5 pt-5" align="center"> Popular Wallpapers</h1>
+	<hr class='dotted'/ >
+	</div>
+
+	<!-- Wallpaper Cards Starts -->
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<img src="img/7.png" style="max-width: 50%">
+			</div>
+		</div>
+	</div>
+	<!-- Wallpaper Cards Ends -->
+	
+	<!-- AOS Script -->
+	<script>
+  		AOS.init();
+	</script>
+</div>
+</body>
+</html>
